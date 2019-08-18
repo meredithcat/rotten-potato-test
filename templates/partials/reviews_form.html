@@ -1,0 +1,22 @@
+<!-- templates/partials/reviews_form.html -->
+
+<fieldset>
+    <legend>Edit Review</legend>
+    <!-- TITLE -->
+    <div class='form-group'>
+        <label for='review-title'>Title</label><br>
+        <input class='form-control' id='review-title' type='text' name='title' value='{{ review.title }}'/>
+    </div>
+
+    <!-- MOVIE TITLE -->
+    <div class='form-group'>
+        <label for='movie-title'>Movie Title</label><br>
+        <input class='form-control' id='movie-title' type='text' name='movieTitle' value='{{ review.movieTitle }}' />
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div class='form-group'>
+        <label for='review-description">Description</label><br>
+        <textarea class="form-control" id="review-description" name="description" rows="10" />{{ review.description }}</textarea>
+    </div>
+</fieldset>
